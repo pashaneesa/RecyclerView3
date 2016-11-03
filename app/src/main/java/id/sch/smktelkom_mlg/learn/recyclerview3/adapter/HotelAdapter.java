@@ -1,6 +1,7 @@
 package id.sch.smktelkom_mlg.learn.recyclerview3.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +28,8 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>
     public interface IHotelAdapter
     {
         void doClick(int pos);
+
+        void onActivityResult(int requestCode, int resultCode, Intent data);
     }
 
     public HotelAdapter(Context context, ArrayList<Hotel> hotelList)

@@ -30,10 +30,10 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>
     public interface IHotelAdapter
     {
         void doClick(int pos);
-        void doEdit(int post);
-        void doDelete(int post);
-        void doFav(int post);
-        void doShare(int post);
+        void doEdit(int pos);
+        void doDelete(int pos);
+        void doFav(int pos);
+        void doShare(int pos);
 
     }
 
